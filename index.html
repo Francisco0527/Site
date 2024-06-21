@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="image"></div>
+        <div id="content">
+            <div class="js-dropdown" id="profile">
+                <img src="./assets/profile.png" alt="Foto de perfil">
+                <p>Francisco Felisbino</p>
+            </div>
+          
+            <ul>
+                <li><a href="https://www.instagram.com/francisco_jf/" target="_blank">Instagram</a></li>
+                <li><a href="https://www.deviantart.com/franciscofelisbino/gallery" target="_blank">DeviantArt</a></li>
+                <li><a href="https://www.youtube.com/@FranciscoJFF" target="_blank">YouTube</a></li>
+                <li><a href="https:/gopro.com/v/2qZOV5OGXO942" target="_blank">GoPro</a></li>
+            </ul>
+            <div id="contato">
+                Contato
+                </div>
+                <div id="modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close-button">&times;</span>
+                        <h2>Informações de contato</h2>
+                        <p>Telefone: (37)99151-9999</p>
+                        <p>e-mail: francisco@gmail.com</p>
+                        <p>Entre em contato:</p>
+                        <form id="contactForm">
+                            <label for="email">E-mail:</label>
+                            <input type="email" id="email" name="email" required>
+                            
+                            <label for="message">Mensagem:</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                            
+                            <button type="submit">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+        </div>
+        
+    </div>
+    <footer>
+        <div id="social-links"> 
+        </div>
+        Todos os direitos reservados <a href="https://www.instagram.com/francisco_jf/" target="_blank">@Francisco</a>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

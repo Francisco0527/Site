@@ -113,14 +113,13 @@ ul li a:hover {
 
 /* Conteúdo */
 #content {
-    width: 55vw; /* 55% da largura da viewport */
+    width: 55%; /* 55% da largura da viewport */
     padding: 0px; /* Adiciona padding para o conteúdo */
 }
 
 /* Imagem */
 #image {
-    width: 45vw; /* 45% da largura da viewport */
-    height: 100vh; /* 100% da altura da viewport */
+    width: 45%; /* 45% da largura da viewport */
     background-image: url(./assets/GOPR1050.JPG);
     background-size: cover;
     background-position: center;
@@ -229,22 +228,29 @@ footer {
 }
 
 /* Media Query para telas pequenas */
-@media (max-width: 900px) {
+@media (max-width: 720px) {
     #container {
         flex-direction: column;
         gap: 16px;
     }
     #image {
         width: 100%; /* Ocupar 100% da largura da tela em dispositivos menores */
-        height: 40vh; /* Ajustar a altura conforme necessário */
+        height: 25vh; /* Ajustar a altura conforme necessário */
         order: 0; /* Alterar a ordem para que a imagem fique em cima */
     }
     #content {
         width: 100%; /* Ocupar 100% da largura da tela em dispositivos menores */
         order: 1; /* Alterar a ordem para que o conteúdo fique abaixo da imagem */
     }
+    #profile {
+        margin-top: 0%;
+    }
+    .modal-content {
+        font-size: 12px;
+    }
     footer {
         position: static; /* Fazer o footer voltar ao fluxo normal do documento */
+        margin-top: 12px;
         padding: 0px; /* Ajustar padding conforme necessário */
     }
 }

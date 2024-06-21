@@ -153,12 +153,13 @@ ul li a:hover {
     height: 100%;
     overflow: auto; 
     padding-top: 60px;
+    background-color: rgb(0, 0, 0, 0.6);
     z-index: 3;
 }
 
 .modal-content {
     background-color: #363636;
-    margin: 5% auto;
+    margin: 10% auto;
     padding: 20px;
     border: 1px solid rgb(212, 0, 255);
     width: 50%;
@@ -189,6 +190,8 @@ label {
     margin-top: 10px;
 }
 
+input[type="text"],
+input[type="tel"],
 input[type="email"],
 textarea {
     width: 100%;
@@ -219,7 +222,7 @@ button[type="submit"]:hover {
 footer {
     color: rgb(212, 0, 255);
     text-align: center;
-    padding: 24px 0;
+    padding: 4px 0;
     background: var(--surface-color);
     width: 100%;
     position: absolute; /* Posiciona o footer sobre a imagem */
@@ -251,6 +254,6 @@ footer {
     footer {
         position: static; /* Fazer o footer voltar ao fluxo normal do documento */
         margin-top: 12px;
-        padding: 0px; /* Ajustar padding conforme necessário */
+        padding: 4px 0; /* Ajustar padding conforme necessário */
     }
 }

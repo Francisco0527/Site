@@ -11,6 +11,16 @@ var contato = document.getElementById("contato");
 var closeButton = document.getElementsByClassName("close-button")[0];
 var form = document.getElementById("contactForm");
 
+// script.js
+document.getElementById('contato').onclick = function() {
+    document.getElementById('modal').style.display = 'block';
+}
+
+document.getElementsByClassName('close-button')[0].onclick = function() {
+    document.getElementById('modal').style.display = 'none';
+}
+
+
 // Quando o botão de contato é clicado, abre o modal
 contato.onclick = function() {
     modal.style.display = "block";
@@ -31,8 +41,10 @@ closeButton.onclick = function() {
 // Quando o formulário é enviado, exibe os dados
 form.onsubmit = function(event) {
     event.preventDefault();
+    var name = document.getElementById("name").value;
+    var phone = document.getElementById("phone").value;
     var email = document.getElementById("email").value;
     var message = document.getElementById("message").value;
-    alert("E-mail: " + email + "\nMensagem: " + message);
+    alert("Nome: " + name + "\nTelefone: " + phone + "\nE-mail: " + email + "\nMensagem: " + message);
     modal.style.display = "none";
 }

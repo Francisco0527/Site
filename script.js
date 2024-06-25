@@ -48,3 +48,26 @@ form.onsubmit = function(event) {
     alert("Nome: " + name + "\nTelefone: " + phone + "\nE-mail: " + email + "\nMensagem: " + message);
     modal.style.display = "none";
 }
+
+const cursor = document.getElementById('cursor');
+let mouseX = 0, mouseY = 0;
+let posX = 0, posY = 0;
+
+document.addEventListener('mousemove', function(event) {
+    mouseX = event.pageX;
+    mouseY = event.pageY;
+});
+
+function updateCursor() {
+    // Interpolação linear para suavizar o movimento
+    posX += (mouseX - posX) * 0.1;
+    posY += (mouseY - posY) * 0.1;
+    
+    cursor.style.left = posX + 'px';
+    cursor.style.top = posY + 'px';
+
+    requestAnimationFrame(updateCursor);
+}
+
+updateCursor();
+

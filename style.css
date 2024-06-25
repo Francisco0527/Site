@@ -230,6 +230,17 @@ footer {
     z-index: 2; /* Garante que o footer fique sobre a imagem */
 }
 
+.cursor {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(212, 0, 255);
+    position: absolute;
+    pointer-events: none; /* Para que o cursor não interfira nos eventos de mouse */
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s linear;
+}
+
 /* Media Query para telas pequenas */
 @media (max-width: 720px) {
     #container {
